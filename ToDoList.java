@@ -31,8 +31,7 @@ public class ToDoList extends JFrame{
         add.setFont(mainFont);
         add.addActionListener(new ActionListener(){
             @Override
-            public void actionPerformed(ActionEvent e) {
-                // TODO Auto-generated method stub
+            public void actionPerformed(ActionEvent e) { 
                 throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
             }
             
@@ -43,7 +42,6 @@ public class ToDoList extends JFrame{
         delete.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
-                // TODO Auto-generated method stub
                 throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
             }
 
