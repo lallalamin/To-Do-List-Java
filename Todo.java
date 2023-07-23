@@ -1,7 +1,6 @@
-//import java.util.Scanner;
-//import java.util.ArrayList; 
+import java.util.Scanner;
+import java.util.ArrayList; 
 
-/* 
 //hello
 class Main {
   //Creating array outside main so that we do not need to keep sending array to every method.
@@ -124,4 +123,4 @@ class Main {
   }
   
 }
-*/
+
