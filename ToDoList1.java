@@ -14,7 +14,8 @@ class Task extends JPanel{
 
     Color pink = new Color(255, 161, 161);
     Color green = new Color(188, 226, 158);
-    Color doneColor = new Color(233, 119, 119);
+    Color red = new Color(233, 119, 119);
+    Color doneColor = new Color(89, 179, 94);
 
     Task(){
         this.setPreferredSize(new Dimension(400, 20));
@@ -33,7 +34,7 @@ class Task extends JPanel{
         this.add(taskName, BorderLayout.CENTER);
 
         done.setPreferredSize(new Dimension(80, 20));
-        done.setBackground(doneColor);
+        done.setBackground(red);
         done.setFocusPainted(false); 
         this.add(done, BorderLayout.EAST);
     }
@@ -51,9 +52,11 @@ class Task extends JPanel{
         return checked;
     }
 
+    //Changing the state of the task
     public void changeState(){
         this.setBackground(green);
         taskName.setBackground(green);
+        done.setBackground(doneColor);
         checked = true;
         revalidate(); // check on this
     }
@@ -61,7 +64,7 @@ class Task extends JPanel{
 }
 
 class List extends JPanel{
-    Color lightColor = new Color(252, 221, 176);
+    Color lightColor = new Color(245, 224, 157);
 
     List(){
         GridLayout layout = new GridLayout(10, 1);
@@ -106,7 +109,7 @@ class Footer extends JPanel{
     JButton clearAll;
 
     Color orange = new Color(233, 133, 128);
-    Color lightColor = new Color(252, 221, 176);
+    Color lightColor = new Color(245, 224, 157);
     Border emptyBorder = BorderFactory.createEmptyBorder();
 
     Footer() {
@@ -145,7 +148,7 @@ class Footer extends JPanel{
 }
 
 class TitleBar extends JPanel{
-    Color lightColor = new Color(252, 221, 176);
+    Color lightColor = new Color(245, 224, 157);
 
     TitleBar(){
         this.setPreferredSize(new Dimension(400, 80)); 
