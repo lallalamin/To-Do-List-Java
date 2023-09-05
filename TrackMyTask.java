@@ -150,14 +150,19 @@ class Footer extends JPanel{
 class TitleBar extends JPanel{
     Color lightColor = new Color(245, 224, 157);
 
+    
+
     TitleBar(){
+        
+
         this.setPreferredSize(new Dimension(400, 80)); 
         this.setBackground(lightColor); 
-        JLabel titleText = new JLabel("To Do List"); 
+        JLabel titleText = new JLabel("TrackMyTask"); 
         titleText.setPreferredSize(new Dimension(200, 60)); 
         titleText.setFont(new Font("Sans-serif", Font.BOLD, 20)); 
         titleText.setHorizontalAlignment(JLabel.CENTER); 
         this.add(titleText); 
+        //this.add(logo1);
     }
 }
 
@@ -170,7 +175,13 @@ class AppFrame extends JFrame{
     private JButton clear;
     private JButton clearAll;
 
+    //private ImageIcon logo;
+    //private JLabel logo1;
+
     AppFrame(){
+        //logo = new ImageIcon(getClass().getResource("TrackMyTaskLogo.png"));
+        //logo1 = new JLabel(logo);
+
         this.setSize(600, 600);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
@@ -182,6 +193,7 @@ class AppFrame extends JFrame{
         this.add(title, BorderLayout.NORTH);
         this.add(footer, BorderLayout.SOUTH);
         this.add(list, BorderLayout.CENTER);
+        //this.add(logo1, BorderLayout.NORTH);
 
         newTask = footer.getNewTask();
         clear = footer.getClear();
@@ -227,7 +239,7 @@ class AppFrame extends JFrame{
     }
 }
 
-public class ToDoList1 {
+public class TrackMyTask {
     public static void main(String args[]){
         AppFrame frame = new AppFrame();
     }
